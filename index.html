@@ -1,0 +1,429 @@
+<!DOCTYPE html><html class="light" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>RDL PERFORMANCE | Consultoria Exclusiva</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .energy-gauge-gradient {
+            background: linear-gradient(90deg, #c7f300 0%, #526600 100%);
+        }
+        .hero-mask {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#ffdad6",
+                      "tertiary": "#5f5e5e",
+                      "inverse-on-surface": "#f0f1f1",
+                      "on-background": "#1a1c1c",
+                      "surface-bright": "#f9f9f9",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "on-surface": "#1a1c1c",
+                      "secondary-container": "#e5e2e1",
+                      "primary-fixed": "#c7f300",
+                      "inverse-primary": "#aed500",
+                      "surface-dim": "#dadada",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#f3f3f4",
+                      "on-primary-fixed": "#171e00",
+                      "secondary": "#5f5e5e",
+                      "surface-variant": "#e2e2e2",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-primary-fixed-variant": "#3d4d00",
+                      "primary-fixed-dim": "#aed500",
+                      "on-secondary-container": "#656464",
+                      "primary": "#526600",
+                      "on-primary-container": "#5d7300",
+                      "background": "#f9f9f9",
+                      "secondary-fixed": "#e5e2e1",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#c5c9ac",
+                      "on-surface-variant": "#444933",
+                      "surface-container-high": "#e8e8e8",
+                      "inverse-surface": "#2f3131",
+                      "surface": "#f9f9f9",
+                      "surface-container-highest": "#e2e2e2",
+                      "on-tertiary-container": "#6c6b6b",
+                      "tertiary-container": "#f0edec",
+                      "outline": "#757a60",
+                      "primary-container": "#d1ff00",
+                      "on-secondary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "surface-tint": "#526600",
+                      "on-error-container": "#93000a",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-tertiary": "#ffffff",
+                      "surface-container": "#eeeeee",
+                      "tertiary-fixed": "#e4e2e1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "label-md": ["Inter"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "display-lg": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "headline-md": ["Montserrat"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar Implementation -->
+<nav class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16 bg-surface dark:bg-on-background shadow-sm">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md font-extrabold tracking-tighter text-on-surface dark:text-inverse-on-surface">RDL PERFORMANCE</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#como-funciona">Como Funciona</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#planos">Planos</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#depoimentos">Sucesso</a>
+<div class="flex gap-4 ml-4">
+<span class="material-symbols-outlined cursor-pointer text-on-surface-variant hover:text-primary transition-colors">notifications</span>
+<span class="material-symbols-outlined cursor-pointer text-on-surface-variant hover:text-primary transition-colors">settings</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant">
+<img alt="Athlete Profile" class="w-full h-full object-cover" data-alt="A professional close-up portrait of a fit individual with a determined expression, lit by dramatic side lighting in a high-performance gym setting. The atmosphere is clinical yet intense, with a background blur showing high-end equipment. The color palette follows a clean white aesthetic with subtle charcoal shadows, embodying the elite consultancy brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdiJznXj00Y-aFSKg5ZeNgzF6FcRAmqiU9pSF87XeZH4ZtT_VCttAlMM9npWuglMepHId1WY_-Kb92EzVLTKi0rjQNj5ux9rIe9HGv1CbC4gQMcgDnZzLaQrAUdMyXab46AMUAMeSX_qPZR7whDbBD1tIJCpTOWPsZgX5JohL97gzwDZ4oXjFEOcEYZmv6bmHy-lsAwDKD49yM3MXUJDZhUW2jXlzXOzDxQVWrIW6VkuVtO5LMNKDlwMdzQzdNYNq6F7lpgZ-6LvQ">
+</div>
+</div>
+</div>
+<div class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-on-surface p-2">menu</span>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Elite Training Environment" class="w-full h-full object-cover brightness-50 md:brightness-100" data-alt="A wide-angle shot of a minimalist, luxury private training studio with sleek black equipment and expansive floor-to-ceiling windows. The morning light is crisp and high-key, highlighting the clean lines of the space. Vibrant electric lime accents are seen in subtle lighting details, creating a high-contrast, energetic atmosphere of professional athletic preparation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8DRpeCBAWZQlUrFmMGxrXIpn12VMrRJUuwejuroCbba0XH3DKORo_BhqaLOz_8R1-_LoT4IOYV9WygmY8LQWjk2HZ6qe3Mu2KT-N-OS_-0-hJrW534P5Vhotwcl3C_7SYFOBIImQFsu7_oN8IkeiKBDMFvDZM39EO4dPeXPcDKPunr4bqLDLPPl0prwDS1kHuehj6XUVVZa4rYoZ71qnddlCBuycWbfV8PRgZ8iOgBifdDo6_uJZctK8pooBZr5hPtKQLWixATfE">
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent hidden md:block"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-3 bg-primary-container text-on-primary-container font-label-md text-label-md rounded-full mb-6">CONSULTORIA PRIVADA</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg mb-6 leading-tight text-on-background">
+                        Alcance sua Melhor Versão com <span class="text-primary">Consultoria Exclusiva</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        Treinamento e nutrição de elite personalizados para o seu DNA. Transforme seu corpo com a metodologia aplicada a atletas de alta performance.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-on-background text-primary-fixed px-8 py-4 rounded-lg font-headline-md text-headline-md hover:scale-105 transition-transform active:scale-95 flex items-center justify-center gap-2">
+                            Começar Agora
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border-2 border-on-background text-on-background px-8 py-4 rounded-lg font-headline-md text-headline-md hover:bg-surface-container-low transition-colors">
+                            Ver Planos
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Como Funciona - Bento Grid -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface" id="como-funciona">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">A Ciência do Resultado</h2>
+<p class="text-secondary max-w-xl mx-auto">Nossa metodologia une precisão clínica com motivação intensa para garantir resultados permanentes.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Step 1 -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant flex flex-col md:flex-row gap-8 items-center transition-all duration-700 opacity-0 translate-y-10">
+<div class="flex-1">
+<span class="text-primary-fixed bg-on-background px-3 py-1 rounded-full text-label-sm font-label-sm mb-4 inline-block">01</span>
+<h3 class="font-headline-md text-headline-md mb-2">Avaliação Biométrica 360º</h3>
+<p class="text-on-surface-variant">Analisamos seu metabolismo, composição corporal e histórico para criar o ponto de partida perfeito.</p>
+</div>
+<div class="flex-1 w-full h-48 bg-surface-container-high rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A macro photograph of professional laboratory diagnostic equipment in a clean, high-tech setting. Soft clinical lighting highlights the precision instruments, reflecting a theme of data-driven fitness. The color palette is minimal, focusing on whites and cool greys with a touch of electric lime signal lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqDEUfuaTwb4kFvSQreexs7SataqnUEcwUvGf8sfFGCvDBD-Sn3nbx4NtywblQbhAXlPMv0K7w07Opa6GAr-HIL2mh4LLUz37aw4yEVKf_bBNYyYU5pfvBKYapV08bX-YeuezvtUXAf2mUirrMoN9C8Y3_xgwLmwBcjRhEsD6CQchRMy2pr344UufGlrYyJAVVCW7u0ZCJngg-g0TvUwfSwDvxd5yPEPkJcZTsiTgpqgxJVs7MLx8QwZ0doW1oBb4oO3fOPIZT6Ho">
+</div>
+</div>
+<!-- Step 2 -->
+<div class="md:col-span-4 bg-on-background text-surface p-8 rounded-xl shadow-sm flex flex-col justify-between transition-all duration-700 opacity-0 translate-y-10">
+<div>
+<span class="text-primary-fixed border border-primary-fixed px-3 py-1 rounded-full text-label-sm font-label-sm mb-4 inline-block">02</span>
+<h3 class="font-headline-md text-headline-md mb-2">Bio-Nutrição</h3>
+<p class="text-surface-variant">Protocolos alimentares flexíveis baseados na sua rotina, focados em densidade nutricional.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<span class="material-symbols-outlined text-primary-fixed text-6xl">restaurant</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="md:col-span-4 bg-primary-container p-8 rounded-xl shadow-sm flex flex-col justify-between transition-all duration-700 opacity-0 translate-y-10">
+<div>
+<span class="bg-on-primary-fixed text-primary-fixed px-3 py-1 rounded-full text-label-sm font-label-sm mb-4 inline-block">03</span>
+<h3 class="font-headline-md text-headline-md text-on-primary-fixed mb-2">Treino Periodizado</h3>
+<p class="text-on-primary-fixed-variant">Planilhas dinâmicas que evoluem com sua força. Vídeos de execução e suporte total.</p>
+</div>
+<div class="mt-8">
+<div class="h-2 w-full bg-on-primary-fixed/20 rounded-full overflow-hidden">
+<div class="h-full bg-on-primary-fixed w-3/4"></div>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant flex flex-col md:flex-row-reverse gap-8 items-center transition-all duration-700 opacity-0 translate-y-10">
+<div class="flex-1">
+<span class="text-primary-fixed bg-on-background px-3 py-1 rounded-full text-label-sm font-label-sm mb-4 inline-block">04</span>
+<h3 class="font-headline-md text-headline-md mb-2">Suporte Elite 24/7</h3>
+<p class="text-on-surface-variant">Acesso direto ao seu coach via app exclusivo para ajustes em tempo real e motivação constante.</p>
+</div>
+<div class="flex-1 w-full h-48 bg-surface-container-high rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-8xl opacity-20">chat</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Nossos Planos -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low transition-all duration-700 opacity-0 translate-y-10" id="planos">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Escolha seu Nível de Performance</h2>
+<p class="text-secondary max-w-xl mx-auto">Soluções escaláveis para quem busca o máximo comprometimento.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Silver -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant flex flex-col h-full hover:shadow-lg transition-all duration-700 opacity-0 translate-y-10">
+<h3 class="font-headline-md text-headline-md mb-2">Silver</h3>
+<div class="mb-6">
+<span class="text-4xl font-bold">R$ 297</span>
+<span class="text-secondary">/mês</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-md">Treino Semanal</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-md">Guia Nutricional Básico</span>
+</li>
+<li class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined opacity-30">cancel</span>
+<span class="font-body-md">Acesso Direto Coach</span>
+</li>
+</ul>
+<button class="w-full py-4 border-2 border-on-background rounded-lg font-label-md text-label-md hover:bg-on-background hover:text-primary-fixed transition-colors">Selecionar</button>
+</div>
+<!-- Gold (Recommended) -->
+<div class="bg-on-background text-surface p-8 rounded-2xl flex flex-col h-full relative scale-105 shadow-2xl z-20">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-fixed text-on-primary-fixed px-4 py-1 rounded-full text-label-sm font-label-sm">MAIS POPULAR</div>
+<h3 class="font-headline-md text-headline-md mb-2">Gold Elite</h3>
+<div class="mb-6">
+<span class="text-4xl font-bold text-primary-fixed">R$ 547</span>
+<span class="text-surface-variant">/mês</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed" data-weight="fill">check_circle</span>
+<span class="font-body-md">Treino Personalizado Daily</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed" data-weight="fill">check_circle</span>
+<span class="font-body-md">Dieta Macrorregulada</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed" data-weight="fill">check_circle</span>
+<span class="font-body-md">Check-ins Semanais</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed" data-weight="fill">check_circle</span>
+<span class="font-body-md">Suporte via WhatsApp</span>
+</li>
+</ul>
+<button class="w-full py-4 bg-primary-fixed text-on-primary-fixed rounded-lg font-headline-md text-headline-md hover:brightness-110 transition-all">Assinar Agora</button>
+</div>
+<!-- Platinum -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant flex flex-col h-full hover:shadow-lg transition-all duration-700 opacity-0 translate-y-10">
+<h3 class="font-headline-md text-headline-md mb-2">Platinum</h3>
+<div class="mb-6">
+<span class="text-4xl font-bold">R$ 997</span>
+<span class="text-secondary">/mês</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">stars</span>
+<span class="font-body-md">Consultoria em Vídeo Mensal</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">stars</span>
+<span class="font-body-md">Biofeedback Biométrico</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">stars</span>
+<span class="font-body-md">Suplementação Avançada</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">stars</span>
+<span class="font-body-md">Acesso a Eventos VIP</span>
+</li>
+</ul>
+<button class="w-full py-4 border-2 border-on-background rounded-lg font-label-md text-label-md hover:bg-on-background hover:text-primary-fixed transition-colors">Entrar em Contato</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Depoimentos -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop overflow-hidden" id="depoimentos">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Transformações Reais</h2>
+<p class="text-secondary">Não são apenas números na balança, são vidas elevadas ao próximo nível de excelência física.</p>
+</div>
+<div class="flex gap-4">
+<button class="p-3 border border-outline-variant rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-3 bg-on-background text-primary-fixed rounded-full hover:brightness-125 transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-low p-6 rounded-2xl transition-all duration-700 opacity-0 translate-y-10">
+<div class="w-16 h-16 rounded-full bg-surface-variant mb-6 overflow-hidden">
+<img alt="Success Story 1" class="w-full h-full object-cover" data-alt="A portrait of a confident athlete smiling after a workout, sweat glistening on their skin. The background is a modern, brightly lit fitness facility with high-end aesthetic details. The lighting is soft but high-contrast, emphasizing their physical transformation. The mood is triumphant and inspiring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLbN8TDjaC2hL9BT1hZvezB36o1Z6mS2kjiONmFmkqCIFb5J2Q1SJJ2BvHV5Mma2p_70LJT_Ad7MW2ara_OCIOmbHWmoQt9eACqA6n1lAUPkA7e_5_zU26q_LYqkK_ax3XI5dCKlnH5Rd8t4zPgUHc9lsObqrNGjqMjL3j7PLns5I2osgtobQYWCWGS33oDLmxuEbrLZv2glP2xFT_QsmX2GkxxFx2fqqmAXLmQvy_bn1xK0_3-wt-953I6_Kkmv1cunh3Z8kn9FM">
+</div>
+<p class="font-body-md italic mb-6 text-on-surface">"A consultoria mudou minha relação com o treino. Pela primeira vez, entendi o que é treinar com propósito e comer para performar. Perdi 12kg e dobrei minha força."</p>
+<div>
+<p class="font-label-md text-label-md">Ricardo Mendes</p>
+<p class="text-label-sm text-secondary">CEO &amp; Maratonista</p>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-low p-6 rounded-2xl transition-all duration-700 opacity-0 translate-y-10">
+<div class="w-16 h-16 rounded-full bg-surface-variant mb-6 overflow-hidden">
+<img alt="Success Story 2" class="w-full h-full object-cover" data-alt="A professional woman in athletic wear looking strong and determined while performing a core exercise. The gym setting is clean and spacious with a luxury corporate feel. Lighting is sharp and focused, highlighting muscle definition. The image has a high-quality, clinical precision vibe with energetic lime accents in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbeD4WavTAnlRqGM8_ECozfbTyKpK3CnsGE6c_Ns4Wk8nmO8jkbFD1EH-7wW3Wpc2ZtyKT5DVN8queKV1n-LQRf4984daPbPFXMMcmSKH16-rO8K82QH2jGLo3twryczC9FOWl9KTGFEQZkPj6_4d-EpgqkmqCptNn3wSZCc_va5lm8A_iIUJ2_xIXlJqk_O4IqmcJgBzSfClJIrAX95MJHPxxxFOMDN4an9GN9BwiE2fGB4xPbz9BBIMf-oRhyAxWeXQGuTaBPus">
+</div>
+<p class="font-body-md italic mb-6 text-on-surface">"A praticidade do app e o suporte do coach foram fundamentais para minha rotina executiva. Resultados consistentes sem abrir mão da minha vida social."</p>
+<div>
+<p class="font-label-md text-label-md">Ana Paula Silva</p>
+<p class="text-label-sm text-secondary">Dentista</p>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-low p-6 rounded-2xl transition-all duration-700 opacity-0 translate-y-10">
+<div class="w-16 h-16 rounded-full bg-surface-variant mb-6 overflow-hidden">
+<img alt="Success Story 3" class="w-full h-full object-cover" data-alt="A fit young man checking his progress in a gym mirror, showing a lean and athletic physique. The environment is a premium fitness club with architectural lighting and high-contrast charcoal and white surfaces. The mood is focused and satisfied, reflecting the high-performance results of the consultancy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgHyEJcBD8pHkTD0GbeqeiXmlv5QRRzsyiJpDQ_4Jdpb7cDHLGjX5bRcalykxS9oUZHw2OlL_srHP9SsQrIE_pO5UguY-Im1PGxhHHVa-VSpNt3zaAu8Vv95Qg7ogHzfbRAI6PAwJ5FL54UKgrwpzuZAxg6xSsrv0pvyJgcG2tLZZ_VS_1LznG8_8irsMRbrNA_HlakrDGMQzogfyUvKvI-OH7XZ4hglALteaD8SSJTDYUXvqxuZcwGOVnPXkqFO24u986hFuZ2L0">
+</div>
+<p class="font-body-md italic mb-6 text-on-surface">"Saí de um platô de 2 anos em apenas 3 meses. A precisão da dieta personalizada foi o que realmente fez a diferença. Recomendo para quem quer seriedade."</p>
+<div>
+<p class="font-label-md text-label-md">Lucas Ferreira</p>
+<p class="text-label-sm text-secondary">Engenheiro</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-on-background">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-display-lg text-display-lg text-primary-fixed mb-8">Pronto para o Próximo Nível?</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim mb-12 max-w-2xl mx-auto">Vagas limitadas para manter a exclusividade e qualidade do atendimento. Reserve seu lugar na Elite.</p>
+<button class="bg-primary-fixed text-on-primary-fixed px-12 py-5 rounded-lg font-headline-md text-headline-md hover:scale-105 transition-transform active:scale-95 shadow-lg shadow-primary-fixed/20">
+                    Garantir Minha Vaga
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Implementation -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter bg-on-background dark:bg-surface-container-lowest border-t border-outline">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-md text-headline-md text-primary-fixed dark:text-primary font-black">ELITE PERFORMANCE</span>
+<p class="font-body-md text-body-md text-secondary-fixed-dim dark:text-secondary text-center md:text-left">© 2024 Elite Performance Consultancy. All rights reserved.</p>
+</div>
+<div class="flex gap-8" >
+<a class="font-label-sm text-label-sm text-secondary-fixed-dim dark:text-secondary hover:text-primary-fixed dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-secondary-fixed-dim dark:text-secondary hover:text-primary-fixed dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-secondary-fixed-dim dark:text-secondary hover:text-primary-fixed dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer opacity-80 hover:opacity-100">share</span>
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer opacity-80 hover:opacity-100">public</span>
+</div>
+</footer>
+<script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple intersection observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bg-surface-container-low, .bg-surface-container-lowest, .md\\:col-span-8, .md\\:col-span-4').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+
+
+</body></html>
