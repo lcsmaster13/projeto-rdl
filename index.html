@@ -109,13 +109,7 @@
 <a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#como-funciona">Como Funciona</a>
 <a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#planos">Planos</a>
 <a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#depoimentos">Sucesso</a>
-<div class="flex gap-4 ml-4">
-<span class="material-symbols-outlined cursor-pointer text-on-surface-variant hover:text-primary transition-colors">notifications</span>
-<span class="material-symbols-outlined cursor-pointer text-on-surface-variant hover:text-primary transition-colors">settings</span>
-<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant">
-<img alt="Athlete Profile" class="w-full h-full object-cover" data-alt="A professional close-up portrait of a fit individual with a determined expression, lit by dramatic side lighting in a high-performance gym setting. The atmosphere is clinical yet intense, with a background blur showing high-end equipment. The color palette follows a clean white aesthetic with subtle charcoal shadows, embodying the elite consultancy brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdiJznXj00Y-aFSKg5ZeNgzF6FcRAmqiU9pSF87XeZH4ZtT_VCttAlMM9npWuglMepHId1WY_-Kb92EzVLTKi0rjQNj5ux9rIe9HGv1CbC4gQMcgDnZzLaQrAUdMyXab46AMUAMeSX_qPZR7whDbBD1tIJCpTOWPsZgX5JohL97gzwDZ4oXjFEOcEYZmv6bmHy-lsAwDKD49yM3MXUJDZhUW2jXlzXOzDxQVWrIW6VkuVtO5LMNKDlwMdzQzdNYNq6F7lpgZ-6LvQ">
-</div>
-</div>
+
 </div>
 <div class="md:hidden flex items-center">
 <span class="material-symbols-outlined text-on-surface p-2">menu</span>
@@ -142,9 +136,9 @@
                             Começar Agora
                             <span class="material-symbols-outlined">arrow_forward</span>
 </button>
-<button class="border-2 border-on-background text-on-background px-8 py-4 rounded-lg font-headline-md text-headline-md hover:bg-surface-container-low transition-colors">
-                            Ver Planos
-                        </button>
+<button onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' })" class="border-2 border-on-background text-on-background px-8 py-4 rounded-lg font-headline-md text-headline-md hover:bg-surface-container-low transition-colors">
+    Ver Planos
+</button>
 </div>
 </div>
 </div>
@@ -196,7 +190,7 @@
 <div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant flex flex-col md:flex-row-reverse gap-8 items-center transition-all duration-700 opacity-0 translate-y-10">
 <div class="flex-1">
 <span class="text-primary-fixed bg-on-background px-3 py-1 rounded-full text-label-sm font-label-sm mb-4 inline-block">04</span>
-<h3 class="font-headline-md text-headline-md mb-2">Suporte Elite 24/7</h3>
+<h3 class="font-headline-md text-headline-md mb-2">Suporte RDL 24/7</h3>
 <p class="text-on-surface-variant">Acesso direto ao seu coach via app exclusivo para ajustes em tempo real e motivação constante.</p>
 </div>
 <div class="flex-1 w-full h-48 bg-surface-container-high rounded-lg flex items-center justify-center">
@@ -263,7 +257,7 @@
 <span class="font-body-md">Suporte via WhatsApp</span>
 </li>
 </ul>
-<button class="w-full py-4 bg-primary-fixed text-on-primary-fixed rounded-lg font-headline-md text-headline-md hover:brightness-110 transition-all">Assinar Agora</button>
+<button class= "w-full py-4 bg-primary-fixed text-on-primary-fixed rounded-lg font-headline-md text-headline-md hover:brightness-110 transition-all" href="contato.html" >Assinar Agora</button>
 </div>
 <!-- Platinum -->
 <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant flex flex-col h-full hover:shadow-lg transition-all duration-700 opacity-0 translate-y-10">
@@ -363,14 +357,10 @@
 <!-- Footer Implementation -->
 <footer class="w-full py-12 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter bg-on-background dark:bg-surface-container-lowest border-t border-outline">
 <div class="flex flex-col items-center md:items-start gap-4">
-<span class="font-headline-md text-headline-md text-primary-fixed dark:text-primary font-black">ELITE PERFORMANCE</span>
-<p class="font-body-md text-body-md text-secondary-fixed-dim dark:text-secondary text-center md:text-left">© 2024 Elite Performance Consultancy. All rights reserved.</p>
+<span class="font-headline-md text-headline-md text-primary-fixed dark:text-primary font-black">RDL PERFORMANCE</span>
+<p class="font-body-md text-body-md text-secondary-fixed-dim dark:text-secondary text-center md:text-left">© 2026 RDL Performance Consultoria. Todos direitos reservados.</p>
 </div>
-<div class="flex gap-8" >
-<a class="font-label-sm text-label-sm text-secondary-fixed-dim dark:text-secondary hover:text-primary-fixed dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
-<a class="font-label-sm text-label-sm text-secondary-fixed-dim dark:text-secondary hover:text-primary-fixed dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
-<a class="font-label-sm text-label-sm text-secondary-fixed-dim dark:text-secondary hover:text-primary-fixed dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
-</div>
+
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed cursor-pointer opacity-80 hover:opacity-100">share</span>
 <span class="material-symbols-outlined text-primary-fixed cursor-pointer opacity-80 hover:opacity-100">public</span>
