@@ -225,38 +225,60 @@
 </div>
 </footer>
 <script>
-        // Micro-interactions for form
-        document.getElementById('registrationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const btn = e.target.querySelector('button[type="submit"]');
-            const originalText = btn.innerText;
-            
-            btn.disabled = true;
-            btn.innerText = 'Processando...';
-            btn.style.opacity = '0.7';
 
-            setTimeout(() => {
-                btn.innerText = 'Sucesso!';
-                btn.classList.remove('bg-on-background');
-                btn.classList.add('bg-primary', 'text-white');
-                
-                // Optional: redirect or show success message
-                setTimeout(() => {
-                    alert('Inscrição realizada com sucesso! Bem-vindo ao Elite Performance.');
-                    btn.disabled = false;
-                    btn.innerText = originalText;
-                    btn.classList.add('bg-on-background');
-                    btn.classList.remove('bg-primary', 'text-white');
-                    btn.style.opacity = '1';
-                }, 1000);
-            }, 1500);
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzEkk5mjvHrywOXsY3WjN0ilSfillveXcFf46aQwLjXsGaxtuW9VecOIb-EGWoyHl4W8g/exec';
+
+document.getElementById('registrationForm')
+.addEventListener('submit', async function(e) {
+
+    e.preventDefault();
+
+    const btn = e.target.querySelector('button[type="submit"]');
+
+    const originalText = btn.innerText;
+
+    btn.disabled = true;
+    btn.innerText = 'Processando...';
+
+    // Captura os dados
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        plan: document.querySelector('input[name="plan"]:checked').value
+    };
+
+    try {
+
+        const response = await fetch(scriptURL, {
+            method: 'POST',
+            body: JSON.stringify(formData)
         });
 
-        // Simple mask for phone (concept)
-        const phoneInput = document.getElementById('phone');
-        phoneInput.addEventListener('input', function(e) {
-            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
-            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
-        });
-    </script>
+        const result = await response.json();
+
+        if(result.result === 'success') {
+
+            btn.innerText = 'Sucesso!';
+
+            alert('Inscrição realizada com sucesso!');
+
+            document.getElementById('registrationForm').reset();
+
+        }
+
+    } catch(error) {
+
+        alert('Erro ao enviar inscrição.');
+
+        console.error(error);
+
+    }
+
+    btn.disabled = false;
+    btn.innerText = originalText;
+
+});
+
+</script>
 </body></html>
