@@ -3,7 +3,9 @@
 ## 📌 Sobre o Projeto
 
 O projeto **RDL PERFORMANCE** consiste em um site institucional desenvolvido para um personal trainer que precisava fortalecer sua presença digital, apresentar seus planos de consultoria esportiva e captar novos clientes através da web.
-link < https://lcsmaster13.github.io/projeto-rdl/index.html >
+
+link de acesso < https://lcsmaster13.github.io/projeto-rdl/index.html >
+
 A plataforma foi criada com foco em experiência do usuário, design moderno e conversão de leads, permitindo que visitantes conheçam os serviços oferecidos e realizem inscrições diretamente pelo formulário integrado ao Google Sheets.
 
 ---
@@ -183,3 +185,4 @@ Além disso, ficou evidente como plataformas low-code aumentam significativament
  Lucas Cunha para fins acadêmicos.
 
  Prof: Marcelo Grilo jr.
+ link video https://www.loom.com/share/a8bc932091f24f1d93c15d72723aaba5
