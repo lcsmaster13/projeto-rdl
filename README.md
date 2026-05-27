@@ -179,10 +179,15 @@ Os principais aprendizados foram:
 Além disso, ficou evidente como plataformas low-code aumentam significativamente a produtividade no desenvolvimento web, permitindo gerar estruturas complexas em poucos segundos, restando ao desenvolvedor apenas ajustes específicos e personalizações avançadas.
 
 ---
+# Video
 
-# 👨‍💻 Autor
+ link video https://www.loom.com/share/a8bc932091f24f1d93c15d72723aaba5
+
+# link repositório
+ link https://github.com/lcsmaster13/projeto-rdl
+
+ # 👨‍💻 Autor
 
  Lucas Cunha para fins acadêmicos.
 
  Prof: Marcelo Grilo jr.
- link video https://www.loom.com/share/a8bc932091f24f1d93c15d72723aaba5
