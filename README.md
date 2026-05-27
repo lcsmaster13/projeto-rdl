@@ -3,7 +3,7 @@
 ## 📌 Sobre o Projeto
 
 O projeto **RDL PERFORMANCE** consiste em um site institucional desenvolvido para um personal trainer que precisava fortalecer sua presença digital, apresentar seus planos de consultoria esportiva e captar novos clientes através da web.
-
+link < https://lcsmaster13.github.io/projeto-rdl/index.html >
 A plataforma foi criada com foco em experiência do usuário, design moderno e conversão de leads, permitindo que visitantes conheçam os serviços oferecidos e realizem inscrições diretamente pelo formulário integrado ao Google Sheets.
 
 ---
@@ -23,6 +23,7 @@ O principal objetivo foi desenvolver uma página web moderna e responsiva capaz 
 # 🛠️ Ferramentas Utilizadas
 
 ## Site Stitch
+<img width="1250" height="693" alt="image" src="https://github.com/user-attachments/assets/68103afa-f264-4cc2-b3d1-7677063bc2e2" />
 
 Foi utilizada a plataforma **Site Stitch** para geração inicial das páginas HTML, CSS e JavaScript.
 
@@ -105,6 +106,8 @@ Entre as principais customizações estão:
 - Reposicionamento do formulário principal;
 - Ajustes finos de CSS;
 - Implementação manual da integração do formulário com Google Sheets utilizando JavaScript e Google Apps Script.
+  <img width="1360" height="894" alt="image" src="https://github.com/user-attachments/assets/0f1a855f-68a2-4477-946f-d22342bf4255" />
+
 
 ### Valor agregado das customizações
 
@@ -115,6 +118,7 @@ As modificações realizadas manualmente permitiram:
 - Melhor experiência do usuário;
 - Funcionalidade real de captura de leads;
 - Maior personalização visual da aplicação.
+<img width="1689" height="902" alt="image" src="https://github.com/user-attachments/assets/b6637f67-532e-463e-a7e1-38e51fef0695" />
 
 ---
 
@@ -130,6 +134,7 @@ Durante o projeto foram mantidos cuidados como:
 - Inputs acessíveis;
 - Navegação simplificada;
 - Boa legibilidade de textos e botões.
+<img width="538" height="828" alt="image" src="https://github.com/user-attachments/assets/83d34f94-af3e-41f5-ba37-bb468ebb699b" />
 
 ---
 
@@ -142,6 +147,7 @@ O formulário de inscrição foi integrado ao Google Sheets utilizando:
 - API Web App do Google.
 
 Os dados preenchidos pelos usuários são enviados automaticamente para uma planilha online, permitindo gerenciamento simples das inscrições em tempo real.
+<img width="825" height="381" alt="image" src="https://github.com/user-attachments/assets/a7c32a03-5f64-4955-95d7-b9e03543da3e" />
 
 ---
 
@@ -174,4 +180,6 @@ Além disso, ficou evidente como plataformas low-code aumentam significativament
 
 # 👨‍💻 Autor
 
-Projeto desenvolvido por Lucas Cunha para fins acadêmicos.
+ Lucas Cunha para fins acadêmicos.
+
+ Prof: Marcelo Grilo jr.
