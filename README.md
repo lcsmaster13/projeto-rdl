@@ -25,7 +25,7 @@ O principal objetivo foi desenvolver uma página web moderna e responsiva capaz 
 # 🛠️ Ferramentas Utilizadas
 
 ## Site Stitch
-<img width="1250" height="693" alt="image" src="https://github.com/user-attachments/assets/68103afa-f264-4cc2-b3d1-7677063bc2e2" />
+<img width="1250" height="693" alt="image" src="https://goyaperfumaria.com.br/pub/media/new/imagem1.jpg" />
 
 Foi utilizada a plataforma **Site Stitch** para geração inicial das páginas HTML, CSS e JavaScript.
 
@@ -108,7 +108,7 @@ Entre as principais customizações estão:
 - Reposicionamento do formulário principal;
 - Ajustes finos de CSS;
 - Implementação manual da integração do formulário com Google Sheets utilizando JavaScript e Google Apps Script.
-  <img width="1360" height="894" alt="image" src="https://github.com/user-attachments/assets/0f1a855f-68a2-4477-946f-d22342bf4255" />
+  <img width="1360" height="894" alt="image" src="https://goyaperfumaria.com.br/pub/media/new/imagem2.jpg" />
 
 
 ### Valor agregado das customizações
@@ -120,7 +120,7 @@ As modificações realizadas manualmente permitiram:
 - Melhor experiência do usuário;
 - Funcionalidade real de captura de leads;
 - Maior personalização visual da aplicação.
-<img width="1689" height="902" alt="image" src="https://github.com/user-attachments/assets/b6637f67-532e-463e-a7e1-38e51fef0695" />
+<img width="1689" height="902" alt="image" src="https://goyaperfumaria.com.br/pub/media/new/imagem3.jpg" />
 
 ---
 
@@ -136,7 +136,7 @@ Durante o projeto foram mantidos cuidados como:
 - Inputs acessíveis;
 - Navegação simplificada;
 - Boa legibilidade de textos e botões.
-<img width="538" height="828" alt="image" src="https://github.com/user-attachments/assets/83d34f94-af3e-41f5-ba37-bb468ebb699b" />
+<img width="538" height="828" alt="image" src="https://goyaperfumaria.com.br/pub/media/new/imagem4.jpg" />
 
 ---
 
@@ -149,7 +149,8 @@ O formulário de inscrição foi integrado ao Google Sheets utilizando:
 - API Web App do Google.
 
 Os dados preenchidos pelos usuários são enviados automaticamente para uma planilha online, permitindo gerenciamento simples das inscrições em tempo real.
-<img width="825" height="381" alt="image" src="https://github.com/user-attachments/assets/a7c32a03-5f64-4955-95d7-b9e03543da3e" />
+
+<img width="825" height="381" alt="image" src="https://goyaperfumaria.com.br/pub/media/new/imagem5.jpg" />
 
 ---
 
